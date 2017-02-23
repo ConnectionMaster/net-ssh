@@ -1,5 +1,5 @@
 # coding: utf-8
-require_relative 'lib/net/ssh/version'
+require './lib/net/ssh/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "net-ssh"
@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Net::SSH: a pure-Ruby implementation of the SSH2 client protocol. It allows you to write programs that invoke and interact with processes on remote servers, via SSH2.}
   spec.homepage      = "https://github.com/net-ssh/net-ssh"
   spec.license       = "MIT"
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 1.9.3")
 
   spec.extra_rdoc_files = [
     "LICENSE.txt",
@@ -38,6 +38,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "rake", "~> 12.0"
   spec.add_development_dependency "minitest", "~> 5.10"
-  spec.add_development_dependency "rubocop", "~> 0.46.0"
+  spec.add_development_dependency "rubocop", "~> 0.8.3"
   spec.add_development_dependency "mocha", ">= 1.2.1"
 end
